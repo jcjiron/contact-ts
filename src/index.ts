@@ -1,0 +1,1 @@
+export { shareToWhatsAppp, sendWhatsapp } from "./whatsapp";

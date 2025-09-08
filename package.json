@@ -1,0 +1,63 @@
+{
+  "name": "contact-ts",
+  "version": "1.0.0",
+  "description": "A web typescript library for social media contact",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.15.0",
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^13.0.1",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/npm": "^12.0.2",
+    "@semantic-release/release-notes-generator": "^14.1.0",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.3.1",
+    "jest": "^30.1.3",
+    "jest-environment-jsdom": "^30.1.2",
+    "nodemon": "^3.1.10",
+    "rimraf": "^6.0.1",
+    "semantic-release": "^24.2.7",
+    "ts-jest": "^29.4.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  },
+  "release": {
+    "branches": [
+      "main"
+    ],
+    "plugins": [
+      [
+        "@semantic-release/commit-analyzer"
+      ],
+      [
+        "@semantic-release/release-notes-generator"
+      ],
+      [
+        "@semantic-release/changelog"
+      ],
+      [
+        "@semantic-release/npm"
+      ],
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "package.json",
+            "CHANGELOG.md"
+          ],
+          "message": "chore(release): 🚀 ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+        }
+      ]
+    ]
+  }
+}
