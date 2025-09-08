@@ -22,7 +22,7 @@ pnpm install
 #### shareToWhatsAppp
 
 ```typescript
-import { shareToWhatsAppp } from "./src/whatsapp";
+import { shareToWhatsAppp } from "contact-ts";
 
 shareToWhatsAppp("Hello world!");
 ```
@@ -30,7 +30,7 @@ shareToWhatsAppp("Hello world!");
 #### sendWhatsapp
 
 ```typescript
-import { sendWhatsapp } from "./src/whatsapp";
+import { sendWhatsapp } from "contact-ts";
 
 sendWhatsapp(1234567890, "Hello, contact!");
 ```

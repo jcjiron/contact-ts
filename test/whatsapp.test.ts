@@ -59,7 +59,7 @@ describe('whatsapp.ts', () => {
             setUserAgent('Macintosh');
             sendWhatsapp("9876543210", 'special chars: &?=');
             expect(window.open).toHaveBeenCalledWith(
-                'https://web.whatsapp.com/send?phone=9876543210&text=special%20chars%3A%20%26%3F%3D',
+                'https://wa.me/9876543210?text=special%20chars%3A%20%26%3F%3D',
                 '_blank'
             );
         });

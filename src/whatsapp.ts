@@ -20,7 +20,7 @@ export const sendWhatsapp = (contact: string, chat: string) => {
     const encodedChat = encodeURIComponent(chat);
     const whatsappUrl = isMobile()
         ? `whatsapp://send?phone=${contact}&text=${encodedChat}`
-        : `https://web.whatsapp.com/send?phone=${contact}&text=${encodedChat}`;
+        : `https://wa.me/${contact}?text=${encodedChat}`;
 
     window.open(whatsappUrl, '_blank');
 }
