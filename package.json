@@ -1,6 +1,6 @@
 {
   "name": "contact-ts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A web typescript library for social media contact",
   "main": "dist/index.js",
   "files": [

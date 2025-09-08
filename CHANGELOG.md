@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/jcjiron/contact-ts/compare/v1.0.0...v1.0.1) (2025-09-08)
+
+
+### Bug Fixes
+
+* Added sendWhatsapp function ([4318813](https://github.com/jcjiron/contact-ts/commit/431881323a8d6b80b0f9dbc831071e890c76eaca))
+
 # 1.0.0 (2025-09-08)
 
 
