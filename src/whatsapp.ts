@@ -16,7 +16,7 @@ export const shareToWhatsAppp = (chat: string) => {
 
 
 
-export const sendWhatsapp = (contact: number, chat: string) => {
+export const sendWhatsapp = (contact: string, chat: string) => {
     const encodedChat = encodeURIComponent(chat);
     const whatsappUrl = isMobile()
         ? `whatsapp://send?phone=${contact}&text=${encodedChat}`

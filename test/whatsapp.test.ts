@@ -48,7 +48,7 @@ describe('whatsapp.ts', () => {
     describe('sendWhatsapp', () => {
         it('should open mobile whatsapp url with encoded chat on mobile', () => {
             setUserAgent('Android');
-            sendWhatsapp(1234567890, 'hello world');
+            sendWhatsapp("1234567890", 'hello world');
             expect(window.open).toHaveBeenCalledWith(
                 'whatsapp://send?phone=1234567890&text=hello%20world',
                 '_blank'
@@ -57,7 +57,7 @@ describe('whatsapp.ts', () => {
 
         it('should open web whatsapp url with encoded chat on desktop', () => {
             setUserAgent('Macintosh');
-            sendWhatsapp(9876543210, 'special chars: &?=');
+            sendWhatsapp("9876543210", 'special chars: &?=');
             expect(window.open).toHaveBeenCalledWith(
                 'https://web.whatsapp.com/send?phone=9876543210&text=special%20chars%3A%20%26%3F%3D',
                 '_blank'
